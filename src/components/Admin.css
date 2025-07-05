@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #00c6ff, #0072ff, #ff758c, #ff7eb3);
+  background-size: 400% 400%;
+  animation: animatedGradient 15s ease infinite;
+}
+
+@keyframes animatedGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.admin-container {
+  padding: 40px 20px;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+.admin-container h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.feedback-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+.feedback-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 20px;
+  color: #fff;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.feedback-card:hover {
+  transform: scale(1.02);
+}
+
+.feedback-card p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.stars {
+  color: #ffc107;
+  font-size: 18px;
+}

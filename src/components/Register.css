@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.register-container {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(-45deg, #fc466b, #3f5efb, #23d5ab, #f7971e);
+  background-size: 400% 400%;
+  animation: animateBG 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes animateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.register-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(14px);
+  padding: 40px 30px;
+  border-radius: 18px;
+  width: 350px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  animation: floatIn 1.2s ease, floatEffect 3s ease-in-out infinite alternate;
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatEffect {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.register-heading {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-form input {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: 0.3s ease;
+}
+
+.register-form input::placeholder {
+  color: #ddd;
+}
+
+.register-form input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.register-form button {
+  padding: 12px;
+  background: linear-gradient(270deg, #1dcce7, #3f51b5, #ff4081, #1dcce7);
+  background-size: 800% 800%;
+  animation: buttonGlow 10s ease infinite;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes buttonGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.register-form button:hover {
+  transform: scale(1.05);
+}
+
+.register-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.register-footer a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.register-footer a:hover {
+  color: #ffccff;
+}
