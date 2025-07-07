@@ -124,7 +124,7 @@ export default function Feedback() {
   function handleLogout() {
     localStorage.removeItem("token"); // 🔐 Remove token
     alert("You have been logged out.");
-    navigate("login"); // ⬅️ Redirect to login or home
+    navigate("/login"); // ⬅️ Redirect to login or home
   }
 
   return (
